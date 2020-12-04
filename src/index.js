@@ -36,7 +36,10 @@ export default class Form1 extends React.Component {
   submitHandler = (event) => {
     event.preventDefault();
     axios.post('http://localhost:8080/test/customer', {
-      name: this.state.name
+      name: this.state.name,
+      age: this.state.age,
+      address: this.state.address,
+      num: this.state.num
     })
     .then(response => alert(response.body));
   }
@@ -44,15 +47,10 @@ export default class Form1 extends React.Component {
   render() {
     return(
       <form onSubmit = {this.submitHandler}>
-        <select value = {this.state.cusid}>
-          <option value = "01">Customer Id: 01</option>
-          <option value = "02">Customer Id: 02</option>
-          <option value = "03">Customer Id: 03</option>
-        </select>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home </a></li>
+          <li><a href="#about">About </a></li>
+          <li><a href="#contact">Contact </a></li>
         </ul>
         <h1>Enter Your Details</h1>
         <p>Enter your name: </p>
@@ -75,7 +73,7 @@ export default class Form1 extends React.Component {
           onChange = {this.phnumChangeHandler}/>
         <p>
           <link rel= "stylesheet" type="text/css" href= "index.css"></link>
-          <button type= "button">submit</button>
+          <input type= "submit"/>
         </p>
       </form>
     );
