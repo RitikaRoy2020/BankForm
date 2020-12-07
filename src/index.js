@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 //import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 export default class Form1 extends React.Component {
@@ -47,11 +47,6 @@ export default class Form1 extends React.Component {
   render() {
     return(
       <form onSubmit = {this.submitHandler}>
-        <ul>
-          <li><a href="#home">Home </a></li>
-          <li><a href="#about">About </a></li>
-          <li><a href="#contact">Contact </a></li>
-        </ul>
         <h1>Enter Your Details</h1>
         <p>Enter your name: </p>
         <input
@@ -81,8 +76,14 @@ export default class Form1 extends React.Component {
 }
 
 ReactDOM.render(
-  < Form1/>,
+  <div>
+ <p>
+    <App/>,
+ </p>
+ <p>
+   <Form1 />,
+ </p>
+ </div>,
   document.getElementById('root')
 );
-
 //ReactDOM.render(document.getElementById('source'));

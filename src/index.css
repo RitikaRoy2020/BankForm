@@ -1,10 +1,11 @@
 body {
-  background-color: lightpink;
+  background-image: url("getty_158673029_9707279704500119_78594.jpg");
   margin: 0;
   font-family: cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: chocolate;
 }
 
 code {
@@ -12,23 +13,13 @@ code {
     monospace;
 }
 
-button {
-  background-color:blue;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
 ul {
-  list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 30;
+  background-size: 20px;
 }
 
 li {
   display: inline;
+  background-color: violet;
 }
