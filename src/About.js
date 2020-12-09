@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function About() {
-    return(
-    <h1>About</h1>
-    );
+export default class About extends React.Component {
+    render() {
+        return(
+            <h2>About</h2>
+        );
+    }
 }
